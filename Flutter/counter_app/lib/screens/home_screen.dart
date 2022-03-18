@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,9 +7,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Center(child: Text("Hola Screen")),
+          title: const Center(child: Text("HomeScreean")),
           elevation: 15.0,
         ),
-        body: const Center(child: Text("Hola Screen")));
+        body: Center(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center,
+              //crossAxisAlignment: CrossAxisAlignment.center,
+              children: const <Widget>[
+                Text("Counter Number"),
+                Text("7"),
+              ]),
+        ));
   }
 }
